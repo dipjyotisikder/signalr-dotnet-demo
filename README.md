@@ -68,4 +68,46 @@ Follow these steps to run the project locally:
 ### 1. **Clone the Repository**  
    ```bash  
    git clone https://github.com/dipjyotisikder/signalr-real-world-example.git  
-   cd signalr-real-world-example  
+   cd signalr-real-world-example
+
+```
+## .NET Best Practices
+1. **Dependency Injection (DI):**  
+   Ensures loose coupling and enhances testability.
+2. **Entity Framework (EF) Core Migrations:**  
+   Maintains database schema consistency across development environments.
+3. **Swagger Integration:**  
+   Provides user-friendly and interactive API documentation.
+4. **Exception Handling Middleware:**  
+   Ensures graceful error handling and consistent API responses.
+5. **CORS Configuration:**  
+   Allows controlled access to resources across different domains.
+6. **Layered Architecture:**  
+   Promotes clean separation of concerns for maintainable and scalable code.
+
+## Angular Best Practices
+1. **Reactive Forms:**  
+   Implements a structured approach to form handling with improved validation.
+2. **State Management:**  
+   Effectively manages the component state using libraries like NgRx or Akita.
+3. **Lazy Loading:**  
+   Optimizes performance by loading modules only when needed.
+4. **Service-Oriented Architecture:**  
+   Ensures components are reusable and testable by relying on services.
+5. **Strict Typing:**  
+   Adopts TypeScript best practices for better reliability and maintainability.
+6. **Code Linting:**  
+   Enforces consistent coding standards using tools like ESLint or TSLint.
+
+# Use Cases
+This project can serve as a foundational starting point for building:
+
+1. **Live Chat Applications:**  
+   Enable real-time communication between users.
+2. **Real-Time Notifications:**  
+   Deliver updates or alerts instantly to users.
+3. **Collaborative Tools:**  
+   Create applications for shared documents, whiteboards, or task management.
+4. **Dynamic Dashboards:**  
+   Provide real-time analytics and visualizations tailored to user needs.
+
