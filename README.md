@@ -1,4 +1,4 @@
-# SignalR Real-World Example  
+# SignalR DotNet Real-World Project Demo  
 
 This repository provides a **real-life implementation of SignalR** with **.NET** and **Angular**, showcasing how to use SignalR to enable real-time communication in modern web applications.  
 
