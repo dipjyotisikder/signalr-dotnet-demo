@@ -67,8 +67,8 @@ Follow these steps to run the project locally:
 
 ### 1. **Clone the Repository**  
    ```bash  
-   git clone https://github.com/dipjyotisikder/signalr-real-world-example.git  
-   cd signalr-real-world-example
+   git clone https://github.com/dipjyotisikder/signalr-dotnet-demo.git  
+   cd signalr-dotnet-demo
 
 ```
 ## .NET Best Practices
@@ -89,15 +89,13 @@ Follow these steps to run the project locally:
 1. **Reactive Forms:**  
    Implements a structured approach to form handling with improved validation.
 2. **State Management:**  
-   Effectively manages the component state using libraries like NgRx or Akita.
+   Effectively manages the component state using libraries like NgRx.
 3. **Lazy Loading:**  
    Optimizes performance by loading modules only when needed.
 4. **Service-Oriented Architecture:**  
    Ensures components are reusable and testable by relying on services.
 5. **Strict Typing:**  
    Adopts TypeScript best practices for better reliability and maintainability.
-6. **Code Linting:**  
-   Enforces consistent coding standards using tools like ESLint or TSLint.
 
 # Use Cases
 This project can serve as a foundational starting point for building:
