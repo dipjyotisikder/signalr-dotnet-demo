@@ -14,6 +14,11 @@ namespace SignalR.Api.Hubs;
 public class ApplicationHub : Hub
 {
     private readonly IUserService _userService;
+
+    /// <summary>
+    /// Constructor for <see cref="ApplicationHub"/>.
+    /// </summary>
+    /// <param name="userService"></param>
     public ApplicationHub(IUserService userService)
     {
         _userService = userService;

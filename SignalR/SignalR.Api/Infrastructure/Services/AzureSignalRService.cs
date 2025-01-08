@@ -22,7 +22,7 @@ public class AzureSignalRService : IAzureSignalRService
     private readonly ICurrentUser _currentUser;
 
     /// <summary>
-    /// Constractor for <see cref="AzureSignalRService"/>.
+    /// Constructor for <see cref="AzureSignalRService"/>.
     /// </summary>
     /// <param name="httpContextAccessor"></param>
     /// <param name="configuration"></param>

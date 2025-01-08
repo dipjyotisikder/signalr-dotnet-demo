@@ -10,6 +10,9 @@ using SignalR.Api.Constants;
 
 namespace SignalR.Api.MessagingModule.Services;
 
+/// <summary>
+/// Service for handling message-related operations.
+/// </summary>
 public class MessageService : IMessageService
 {
     private readonly IDataContext _context;
@@ -17,6 +20,13 @@ public class MessageService : IMessageService
     private readonly IConversationService _conversationService;
     private readonly ICurrentUser _currentUser;
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="MessageService"/> class.
+    /// </summary>
+    /// <param name="context">The data context.</param>
+    /// <param name="hubService">The hub service.</param>
+    /// <param name="conversationService">The conversation service.</param>
+    /// <param name="currentUser">The current user.</param>
     public MessageService(
         IDataContext context,
         IHubService hubService,
@@ -29,6 +39,11 @@ public class MessageService : IMessageService
         _currentUser = currentUser;
     }
 
+    /// <summary>
+    /// Creates a new message.
+    /// </summary>
+    /// <param name="request">The create message model.</param>
+    /// <returns>The created message model.</returns>
     public async Task<MessageModel> Create(CreateMessageModel request)
     {
         // CREATE MESSAGE
@@ -66,6 +81,11 @@ public class MessageService : IMessageService
         return messageModel;
     }
 
+    /// <summary>
+    /// Gets the message model by message ID.
+    /// </summary>
+    /// <param name="messageId">The message ID.</param>
+    /// <returns>The message model.</returns>
     private MessageModel GetMessageModel(int messageId)
     {
         var messageModel = (from message in _context.Messages
